@@ -1,22 +1,28 @@
 #include<iostream>
-#include<Math.h>
 using namespace std;
-
 int main()
 {
-	int n,k;
-	cout<<"Please input a number:";
+	int n,t=1;
+	cout<<"please input a number:";
 	cin>>n;
-	k=sqrt(n);
-	for(int i=2;i<k;i++)
+	if(n<2)
+	{
+		cout<<"***NO***";
+	}
+	
+	for(int i=2;i<n;i++)
 	{
 		if(n%i==0)
-		cout<<"No";
-		else	
-		cout<<"Yes";
+		{
+		     cout<<n<<"  "<<"---It's not primer number ---";
+		     return 1;
+		}
 	}
+	
+	cout<<n<<"  "<<"---It's a primer number---";
+	return 0;
+	
 }
-
 
 
 
