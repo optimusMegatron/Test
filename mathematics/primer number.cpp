@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-	int n,t=1;
+	int n;
 	cout<<"please input a number:";
 	cin>>n;
 	if(n<2)
@@ -14,7 +14,7 @@ int main()
 	{
 		if(n%i==0)
 		{
-		     cout<<n<<"  "<<"---It's not primer number ---";
+		     cout<<n<<"  "<<"---It's not a primer number ---";
 		     return 1;
 		}
 	}
